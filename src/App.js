@@ -1,12 +1,14 @@
-import './App.css'
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+import Home from 'screens/Home/Home'
 
-function App () {
+const App = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
-         Online Shop
-      </header>
-    </div>
+    <>
+      <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch>
+    </>
   )
 }
 
