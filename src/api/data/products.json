@@ -1,0 +1,19 @@
+{
+    "products": [
+        { 
+            "id": "GR1",
+            "name": "Green tea",
+            "price": 3.11
+        },
+        { 
+            "id": "SR1",
+            "name": "Strawberris",
+            "price": 5.00
+        },
+        { 
+            "id": "CF1",
+            "name": "Coffe",
+            "price": 11.23
+        }
+    ]
+}
