@@ -1,24 +1,13 @@
 import React from 'react'
-import { Card, CardContent, Image } from './styles'
-import { ItemOne, ItemTwo, ItemThree } from 'images/index'
-import Button from 'components/units/Button/Button'
+import Card from 'screens/UserFlow/Card/Card'
 
-const Products = () => {
+const Products = ({ products, addToCart }) => {
   return (
-    <Card>
-      <div className='card-image'>
-        <Image src={ItemOne} alt='coffe' />
-      </div>
-      <CardContent>
-        <h2>Coffe</h2>
-        <h3>Price: 5.8€</h3>
-      </CardContent>
-      <Button
-        text='Add to Cart'
-        type='submit'
-        className='styleButton'
-      />
-    </Card>
+    <>
+      {products && products.map((product) => (
+        <Card key={product.id} product={product} addToCart={addToCart} />
+      ))}
+    </>
   )
 }
 

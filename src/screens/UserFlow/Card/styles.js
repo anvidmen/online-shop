@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import Colors from 'theme/Colors'
 
-export const Card = styled.div`
+export const StyleCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: ${Colors.fontColor} 0% 0% no-repeat padding-box;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     box-shadow: 1px 3px 6px 3px #00000039;
@@ -36,4 +37,29 @@ export const CardContent = styled.div`
     & > h3 {
         font: bolder bolder bolder 20px Helvetica Neue;
     }
+`
+
+export const StyledButton = styled.button`
+    border: none;
+    border-radius: 6px;
+    opacity: 1;
+    font: normal normal normal 20px/25px Helvetica Neue;
+    width: 100%;
+    height: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+    outline: none;
+    
+    &.styleButton {
+        background: transparent
+        linear-gradient(98deg, #01b1A1 100%, #08A6A6 100%) 0% 0% no-repeat;
+        padding-box;
+        color: ${Colors.fontColor};
+        
+        &:hover {
+            cursor: pointer;
+            box-shadow: 2px 0 2px 2px rgba(10, 10, 10,.3)
+        }
+    }
+
 `
