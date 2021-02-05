@@ -3,7 +3,7 @@ import Colors from 'theme/Colors'
 
 export const StyledNavbar = styled.nav`
     overflow: hidden;
-    background-color: ${Colors.bgNav};
+    background-color: ${Colors.bgColor};
     heigth: 4rem
 `
 
@@ -15,7 +15,7 @@ export const Container = styled.div`
 
     & > a {
         float: left;
-        color:  ${Colors.fontNav};
+        color:  ${Colors.fontColor};
         text-align: center;
         text-decoration: none;
         font: normal normal normal 24px Helvetica Neue;
@@ -32,7 +32,7 @@ export const Routes = styled.div`
 
     & > a {
         float: left;
-        color:  ${Colors.fontNav};
+        color:  ${Colors.fontColor};
         text-align: center;
         padding: 1rem 1rem;
         text-decoration: none;

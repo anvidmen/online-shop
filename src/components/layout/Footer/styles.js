@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Colors from 'theme/Colors'
 
 export const StyledFooter = styled.footer`
     display: flex;
@@ -6,8 +7,8 @@ export const StyledFooter = styled.footer`
     width: 100%;
     height: 4rem;
     bottom: 0;
-    background-color: black;
-    color: white;
+    background-color: ${Colors.bgColor};
+    color: ${Colors.fontColor};
   
 
     @media only screen and (max-width: 468px) {

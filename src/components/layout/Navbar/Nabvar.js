@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to='/'>Shopping</Link>
         <Routes>
           <Link to='/'>Shop</Link>
-          <Link to='/cart'>My cart</Link>
+          <Link to='/checkout'>My cart</Link>
           <Link to='/cart'><ShoppingCartIcon /></Link>
         </Routes>
       </Container>

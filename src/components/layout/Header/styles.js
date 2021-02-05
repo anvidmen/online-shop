@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
     align-items: center;
     font: normal normal normal 26px/32px Helvetica Neue;
     letter-spacing: 0px;
-    color: ${Colors.fontHead};
+    color: ${Colors.fontColor};
     background: var(--unnamed-color-e6f2f2) 0% 0% no-repeat padding-box;
     background: ${Colors.bgHead} 0% 0% no-repeat padding-box;
     opacity: 1;
