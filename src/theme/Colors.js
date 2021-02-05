@@ -1,9 +1,8 @@
 const Colors = {
-  bgNav: '#112001',
-  fontNav: '#ffff',
+  bgColor: 'black',
+  fontColor: '#ffff',
   hoverNav: 'aqua',
-  bgHead: '#08a6a6',
-  fontHead: '#ffff'
+  bgHead: '#08a6a6'
 }
 
 export default Colors
