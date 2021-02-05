@@ -1,3 +1,3 @@
-export { default as ItemOne } from './coffee.jpg'
-export { default as ItemTwo } from './greenTea.jpg'
-export { default as ItemThree } from './strawberries.jpg'
+export { default as Coffee } from './coffee.jpg'
+export { default as GreenTea } from './greenTea.jpg'
+export { default as Strawberries } from './strawberries.jpg'
