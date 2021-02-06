@@ -10,42 +10,41 @@ export const Cart = styled.div`
 export const Wrapper = styled.div`
     height: 100%;
     min-height: 20vh;
+`
 
-    & > ul {
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: space-between;
-        min-height: 4rem;
-        
-        & > li {
-            list-style-type: none;
-            font: normal normal normal 23px Helvetica Neue;
-        }
+export const Container = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    min-height: 4rem;
+    border-bottom: 1px solid #ccc;
+    font: normal normal normal 23px Helvetica Neue;
+
+    & > div {
+        width: 6rem;
+        padding: 1rem 0 1rem;
     }
 `
 
-export const Item = styled.p`
+export const Item = styled.div`
     display: block;
     margin-bottom: 1rem;
     font: normal normal normal 20px Helvetica Neue;
 `
 
-export const Price = styled.span`
-    text-align: right;
+export const Price = styled.div`
     position: relative;
     font: normal bold normal 23px Helvetica Neue;
 `
 
-export const Message = styled.span`
+export const Message = styled.div`
     font: normal bold normal 23px Helvetica Neue;
     text-align: center;
-    min-height: inherit;
-    margin: 2rem
+    padding: 4rem
 `
 
 export const Total = styled.div`
-    font: normal normal normal 25px Helvetica Neue;
+    font: normal bold normal 25px Helvetica Neue;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
