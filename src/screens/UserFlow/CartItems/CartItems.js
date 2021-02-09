@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cart, Item, Message, Price, Total, Wrapper } from './styles'
+import { Cart, Container, Item, Message, Price, Total, Wrapper } from './styles'
 
 const CartItems = ({ cartItems }) => {
   const calculateDiscountCoffee = () => {
@@ -36,26 +36,23 @@ const CartItems = ({ cartItems }) => {
   return (
     <Cart>
       <Wrapper>
-        <ul>
-          <li>Id</li>
-          <li>Name</li>
-          <li>Quantity</li>
-          <li>Price</li>
-          <li>Discount</li>
-          <li>Total</li>
-        </ul>
+        <Container>
+          <div>Id</div>
+          <div>Name</div>
+          <div>Quantity</div>
+          <div>Price</div>
+          <div>Discount</div>
+          <div>Total</div>
+        </Container>
         {cartItems && cartItems.length ? (cartItems.map(item => (
-          <ul key={item.id}>
+          <Container key={item.id}>
             <Item>{item.id}</Item>
             <Item>{item.name}</Item>
             <Item>{item.qty}</Item>
             <Item>€ {item.price}</Item>
             <Item>€ {(item.price * item.qty - calculateDiscountCoffee(cartItems)).toFixed(2)}</Item>
-            <Price>€ {calculateDiscountCoffee(cartItems).toFixed(2)} </Price>
-          </ul>
-
-        )))
-          : (<Message>Your cart is empty</Message>)}
+            <Price>€ {calculateDiscountCoffee(cartItems).toFixed(2)}</Price>
+          </Container>))) : (<Message>Your cart is empty</Message>)}
       </Wrapper>
       <Total>
         <p>Total</p><p>€ {calculateTotalPrice(cartItems).toFixed(2)}</p>
