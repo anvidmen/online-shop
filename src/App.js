@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, useHistory } from 'react-router-dom'
 import Home from 'screens/Home/Home'
 import MyCart from 'screens/UserFlow/MyCart/MyCart'
 import CartDropdown from 'screens/UserFlow/CartDropdown/CartDropdown'
+import Order from 'screens/UserFlow/Order/Order'
 import data from 'data/data'
 
 const App = () => {
   const [cartItems, setCartItems] = useState([])
   const { products } = data
+  const history = useHistory()
 
   const addToCart = (product) => {
     const exist = cartItems.find((item) => item.id === product.id)
@@ -22,6 +24,10 @@ const App = () => {
   const handleDeleteCart = () => {
     setCartItems([])
   }
+  const handlePlacerOrder = () => {
+    setCartItems([])
+    history.push('/order')
+  }
 
   return (
     <>
@@ -29,12 +35,13 @@ const App = () => {
         <Route exact path='/'>
           <Home products={products} addToCart={addToCart} />
         </Route>
-        <Route exact path='/Checkout'>
-          <MyCart cartItems={cartItems} addToCart={addToCart} removeCart={handleDeleteCart} />
+        <Route exact path='/checkout'>
+          <MyCart cartItems={cartItems} addToCart={addToCart} removeCart={handleDeleteCart} checkout={handlePlacerOrder} />
         </Route>
         <Route exact path='/cart'>
           <CartDropdown cartItems={cartItems} removeCart={handleDeleteCart} />
         </Route>
+        <Route extact path='/order' component={Order} />
       </Switch>
     </>
   )
