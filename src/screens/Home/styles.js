@@ -9,6 +9,6 @@ export const Container = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 1rem;
+        margin: 1rem
     }
 `

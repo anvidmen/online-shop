@@ -4,12 +4,12 @@ export const Cart = styled.div`
     padding: 1rem;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column
 `
 
 export const Wrapper = styled.div`
     height: 100%;
-    min-height: 20vh;
+    min-height: 20vh
 `
 
 export const Container = styled.div`
@@ -22,7 +22,7 @@ export const Container = styled.div`
 
     & > div {
         width: 6rem;
-        padding: 1rem 0 1rem;
+        padding: 1rem 0 1rem
     }
 `
 
@@ -40,7 +40,7 @@ export const Price = styled.div`
 export const Message = styled.div`
     font: normal bold normal 23px Helvetica Neue;
     text-align: center;
-    padding: 4rem
+    padding: 2rem
 `
 
 export const Total = styled.div`

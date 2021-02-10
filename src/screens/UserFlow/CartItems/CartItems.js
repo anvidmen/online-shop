@@ -14,11 +14,11 @@ const CartItems = ({ cartItems }) => {
       if (item.name === 'Coffee' && item.qty > 2) discount = item.price * item.qty * discCoffee
       else discount = item.price * item.qty
 
-      if (item.name === 'Strawberries' && item.qty > 2) discount = (item.price * item.qty) - (discStrawberries * item.qty)
-      else discount = item.price * item.qty
+      // if (item.name === 'Strawberries' && item.qty > 2) discount = (item.price * item.qty) - (discStrawberries * item.qty)
+      // else discount = item.price * item.qty
 
-      if (item.name === 'Green tea' && item.qty === 2) discount = (item.price * item.qty) / discGreenTea
-      else if (item.qty > 2) discount = (item.price * item.qty) - item.price
+      // if (item.name === 'Green tea' && item.qty === 2) discount = (item.price * item.qty) / discGreenTea
+      // else if (item.qty > 2) discount = (item.price * item.qty) - item.price
     }
     return discount
   }

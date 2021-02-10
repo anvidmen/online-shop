@@ -25,6 +25,7 @@ export const Image = styled.img`
     width: 100%;
     height: 100%;
 `
+
 export const CardContent = styled.div`
     display: flex;
     justify-content: center;
@@ -35,7 +36,7 @@ export const CardContent = styled.div`
         font: normal bold normal 27px Helvetica Neue;
     }
     & > h3 {
-        font: bolder bolder bolder 20px Helvetica Neue;
+        font: bolder bolder bolder 20px Helvetica Neue
     }
 `
 

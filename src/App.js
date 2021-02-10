@@ -4,7 +4,7 @@ import Home from 'screens/Home/Home'
 import MyCart from 'screens/UserFlow/MyCart/MyCart'
 import CartDropdown from 'screens/UserFlow/CartDropdown/CartDropdown'
 import Order from 'screens/UserFlow/Order/Order'
-import data from 'data/data'
+import data from 'assets/data/data'
 
 const App = () => {
   const [cartItems, setCartItems] = useState([])

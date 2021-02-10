@@ -9,7 +9,7 @@ export const StylesOrder = styled.div`
     width: 100%;
 
     & > h1 {
-        font: normal bold normal 24px/27px Helvetica Neue;
+        font: normal bold normal 24px/27px Helvetica Neue
     };
 
     & > img {
