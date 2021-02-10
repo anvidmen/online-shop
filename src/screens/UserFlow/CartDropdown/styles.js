@@ -13,5 +13,5 @@ export const CartDrop = styled.div`
     z-index: 5;
     transition: all 0.3s ease-in-out;
     background: ${Colors.bgHead};
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33,33,33,.2)
 `

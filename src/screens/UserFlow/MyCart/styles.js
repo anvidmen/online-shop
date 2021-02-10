@@ -8,14 +8,14 @@ export const Container = styled.div`
     background: ${Colors.fontColor} 0% 0% no-repeat padding-box;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    box-shadow: 0px 2px 4px 2px #00000039;
+    box-shadow: 0px 2px 4px 2px #00000025;
     overflow: hidden;
     margin: 2rem 10rem 2rem 10rem;
     padding: 2rem;
     
     @media only screen and (max-width: 667px) {
         max-width: 20rem;
-        margin: 1rem;
+        margin: 1rem
     }
 `
 
@@ -23,7 +23,7 @@ export const ButtonItems = styled.div`
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 `
 
 export const ExtraButtons = styled.div`
@@ -79,5 +79,4 @@ export const StyledButton = styled.button`
             box-shadow: 2px 0 2px 2px rgba(10, 10, 10,.3)
         }
     }
-
 `

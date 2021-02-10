@@ -20,10 +20,11 @@ export const Container = styled.div`
         text-decoration: none;
         font: normal normal normal 24px Helvetica Neue;
         &:hover {
-            color: ${Colors.hoverNav};
+            color: ${Colors.hoverNav}
         }
     }
 `
+
 export const Routes = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -39,7 +40,7 @@ export const Routes = styled.div`
         font: normal normal normal 20px Helvetica Neue;
 
         &:hover {
-            color: ${Colors.hoverNav};
+            color: ${Colors.hoverNav}
         }
     }
 `

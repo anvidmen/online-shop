@@ -1,4 +1,4 @@
-import { Coffee, GreenTea, Strawberries } from 'images/index'
+import { Coffee, GreenTea, Strawberries } from 'assets/images'
 
 const data = {
   products: [
@@ -7,4 +7,5 @@ const data = {
     { id: 'CF1', name: 'Coffee', price: 11.23, img: Coffee }
   ]
 }
+
 export default data

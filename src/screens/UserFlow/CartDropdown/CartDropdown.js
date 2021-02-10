@@ -9,7 +9,6 @@ const CartDropdown = ({ reference, cartItems, removeCart }) => {
     <CartDrop ref={reference}>
       <CartItems cartItems={cartItems} />
       <div className='button-items'>
-        {console.log('hola')}
         {
           cartItems.length === 0
             ? <Link disabled className='checkout-button' to='/' onClick={(event) => event.preventDefault()}>Add a product!</Link>
