@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Cart = styled.div`
-    padding: 1rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column
@@ -16,13 +15,12 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    min-height: 4rem;
     border-bottom: 1px solid #ccc;
     font: normal normal normal 23px Helvetica Neue;
 
     & > div {
         width: 6rem;
-        padding: 1rem 0 1rem
+        padding: 0.5rem 0 0.5rem
     }
 `
 
