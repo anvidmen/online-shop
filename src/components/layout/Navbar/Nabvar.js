@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
-import CartQuantityIcon from 'components/CartQuantityIcon/CartQuantityIcon'
+import CartQuantityIcon from 'components/units/CartQuantityIcon/CartQuantityIcon'
 import { Container, Routes, StyledNavbar } from './styles'
 
 const Navbar = () => {
