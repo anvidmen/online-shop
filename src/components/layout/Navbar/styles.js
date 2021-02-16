@@ -32,6 +32,7 @@ export const Routes = styled.div`
     padding: 0 3rem 0 0;
 
     & > a {
+        display: flex;
         float: left;
         color:  ${Colors.fontColor};
         text-align: center;

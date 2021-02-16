@@ -4,9 +4,9 @@ import CartItems from 'screens/UserFlow/CartItems/CartItems'
 import { Link } from 'react-router-dom'
 import { CartDrop } from './styles'
 
-const CartDropdown = ({ reference, cartItems, removeCart }) => {
+const CartDropdown = ({ cartItems, removeCart }) => {
   return (
-    <CartDrop ref={reference}>
+    <CartDrop>
       <CartItems cartItems={cartItems} />
       <div className='button-items'>
         {
