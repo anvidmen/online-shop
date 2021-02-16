@@ -5,7 +5,7 @@ import CartItems from 'screens/UserFlow/CartItems/CartItems'
 import RemoveCart from 'screens/UserFlow/RemoveCart/RemoveCart'
 import { ButtonItems, Container, ExtraButtons } from './styles'
 
-const MyCart = ({ cartItems, removeCart, addToCart, checkout }) => {
+const MyCart = ({ cartItems, removeCart, checkout }) => {
   const handleCheckout = event => {
     event.preventDefault()
 
@@ -15,7 +15,7 @@ const MyCart = ({ cartItems, removeCart, addToCart, checkout }) => {
   return (
     <Body title='Products in your cart'>
       <Container>
-        <CartItems cartItems={cartItems} addToCart={addToCart} />
+        <CartItems cartItems={cartItems} />
         <ButtonItems>
           <ExtraButtons>
             <RemoveCart className='clearCart' clearCart={removeCart} />
