@@ -22,12 +22,24 @@ export const StyleCard = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        width: 4rem;
-        height: 4rem;
+        width: 6rem;
+        height: 6rem;
         border-radius: 50%;
         background-color: yellow;
         font: normal bold normal 22px Helvetica Neue;
-    },
+        
+        & > label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 62%;
+            left: 3px;
+            width: 5.6rem;
+            font: normal normal normal 12px Helvetica Neue;
+        }
+    };
+    
     
     @media only screen and (max-width: 667px) {
         max-width: 20rem;
