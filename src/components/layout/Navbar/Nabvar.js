@@ -4,7 +4,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import CartQuantityIcon from 'components/units/CartQuantityIcon/CartQuantityIcon'
 import { Container, Routes, StyledNavbar } from './styles'
 
-const Navbar = () => {
+const Navbar = ({ quantity }) => {
   return (
     <StyledNavbar>
       <Container>
@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to='/'>Shop</Link>
           <Link to='/checkout'>
             <ShoppingCartIcon />
-            <CartQuantityIcon />
+            <CartQuantityIcon quantityItems={quantity} />
           </Link>
           {/* <Link to='/cart'><ShoppingCartIcon /></Link> */}
         </Routes>

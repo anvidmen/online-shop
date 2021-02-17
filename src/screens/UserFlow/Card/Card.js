@@ -2,9 +2,10 @@ import React from 'react'
 import { CardContent, Image, StyleCard, StyledButton } from './styles'
 
 const Card = ({ product, addToCart }) => {
-  const { name, price, img } = product
+  const { name, price, img, offer } = product
   return (
     <StyleCard>
+      <span>{offer}</span>
       <div className='card-image'>
         <Image src={img} alt={name} />
       </div>

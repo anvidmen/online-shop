@@ -5,6 +5,7 @@ export const StyleCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     background: ${Colors.fontColor} 0% 0% no-repeat padding-box;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -13,6 +14,20 @@ export const StyleCard = styled.div`
     max-width: 22rem;
     margin: 1rem;
     padding: 1rem;
+
+    & > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: yellow;
+        font: normal bold normal 22px Helvetica Neue;
+    },
     
     @media only screen and (max-width: 667px) {
         max-width: 20rem;

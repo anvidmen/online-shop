@@ -52,14 +52,20 @@ const App = () => {
     history.push('/order')
   }
 
+  const numItems = () => {
+    return cartItems.reduce((quantityItems, currentItem) =>
+      quantityItems + currentItem.qty
+    , 0)
+  }
+
   return (
     <>
       <Switch>
         <Route exact path='/'>
-          <Home products={products} addToCart={addToCart} />
+          <Home products={products} addToCart={addToCart} quantityItems={numItems()} />
         </Route>
         <Route exact path='/checkout'>
-          <MyCart cartItems={cartItems} addToCart={addToCart} removeCart={handleDeleteCart} checkout={handlePlacerOrder} quantityItems={0} />
+          <MyCart cartItems={cartItems} addToCart={addToCart} removeCart={handleDeleteCart} checkout={handlePlacerOrder} quantityItems={numItems()} />
         </Route>
         <Route exact path='/cart'>
           <CartDropdown cartItems={cartItems} removeCart={handleDeleteCart} />
