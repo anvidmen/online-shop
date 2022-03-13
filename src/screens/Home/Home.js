@@ -1,13 +1,12 @@
-import React from 'react'
 import Body from 'components/layout/Body/Body'
 import Products from 'screens/UserFlow/Products/Products'
 import { Container } from './styles'
 
-const Home = ({ products, addToCart, quantityItems }) => {
+const Home = () => {
   return (
-    <Body title='Our products' qtyItems={quantityItems}>
+    <Body title='Our products'>
       <Container>
-        <Products products={products} addToCart={addToCart} />
+        <Products/>
       </Container>
     </Body>
   )
