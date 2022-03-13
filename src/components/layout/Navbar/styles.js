@@ -4,7 +4,9 @@ import Colors from 'theme/Colors'
 export const StyledNavbar = styled.nav`
     overflow: hidden;
     background-color: ${Colors.bgColor};
-    heigth: 4rem
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 `
 
 export const Container = styled.div`    
