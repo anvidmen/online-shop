@@ -13,4 +13,5 @@ export const StyledHeader = styled.header`
     opacity: 1;
     border: 1px solid #b5dddd;
     height: 5rem;
+    margin-top: 3.4rem;
 `
