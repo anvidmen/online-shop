@@ -1,19 +1,17 @@
-import React from 'react'
+import { useMediaQuery } from "react-responsive"
+import { MAX_WIDTH } from 'theme/Responsive'
+import calculateTotalPrice  from 'utils/totalPrice'
 import { Cart, Container, Item, Message, Price, Total, Wrapper } from './styles'
 
 const CartItems = ({ cartItems }) => {
-  const calculateTotalPrice = cartItems => {
-    return cartItems.reduce((totalItemsPrice, currentItem) =>
-      totalItemsPrice + currentItem.totalPrice
-    , 0)
-  }
+  const isSmallScreen = useMediaQuery(MAX_WIDTH)
 
   return (
     <Cart>
       <Wrapper>
         <Container>
-          <div>Id</div>
-          <div>Name</div>
+          <div className="category">Category</div>
+          <div>Article</div>
           <div>Quantity</div>
           <div>Price</div>
           <div>Discount</div>
@@ -21,7 +19,7 @@ const CartItems = ({ cartItems }) => {
         </Container>
         {cartItems && cartItems.length ? (cartItems.map(item => (
           <Container key={item.id}>
-            <Item>{item.id}</Item>
+            <Item visible={isSmallScreen} >{item.category}</Item>
             <Item>{item.name}</Item>
             <Item>{item.qty}</Item>
             <Item>€ {item.price}</Item>
