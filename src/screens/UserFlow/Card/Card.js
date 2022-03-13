@@ -1,13 +1,17 @@
-import React from 'react'
-import { CardContent, Image, StyleCard, StyledButton } from './styles'
+import { ButtonContainer, CardContent, Image, StyledButton, StyleCard  } from './styles'
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import DeleteIcon from '@material-ui/icons/Delete';
 
-const Card = ({ product, addToCart }) => {
-  const { name, price, img, offer, description } = product
+const Card = ({ product, addToCart, removeItemCart }) => {
+  const { description, img, name, offer, price } = product
+
   return (
     <StyleCard>
-      <span>{offer}
-        <label for='description'>{description}</label>
-      </span>
+      {offer && 
+        <span>{offer}
+          <label htmlFor='description'>{description}</label>
+        </span> 
+      }
       <div className='card-image'>
         <Image src={img} alt={name} />
       </div>
@@ -15,9 +19,14 @@ const Card = ({ product, addToCart }) => {
         <h2>{name}</h2>
         <h3>€ {price}</h3>
       </CardContent>
-      <StyledButton className='styleButton' onClick={() => addToCart(product)}>
-        Add to Cart
-      </StyledButton>
+      <ButtonContainer>
+        <StyledButton colorButton="#08a6a6" aria-label="add to cart" className='styleButton'  onClick={() => addToCart(product)}>
+          <AddShoppingCartIcon/>
+        </StyledButton>
+        <StyledButton colorButton="#ef1818a6"  aria-label="remove item" className='styleButton' onClick={() => removeItemCart(product)}>
+          <DeleteIcon/>
+        </StyledButton>
+      </ButtonContainer>  
     </StyleCard>
   )
 }

@@ -19,7 +19,7 @@ export const StyledFooter = styled.footer`
 
 export const Container = styled.div`
     display: block;
-    margin: 0;
+    margin-top: 1rem;
     width: 80%    
 `
 
@@ -27,10 +27,10 @@ export const Information = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 1rem;
+    margin-top: 1rem;
     
     & h2 {
-        font: normal normal normal 24px/26px Helvetica Neue;
+        font: normal bold normal 24px Helvetica Neue;
     };
     
     & > a {
@@ -50,6 +50,10 @@ export const Information = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        & > h2 {
+            font: normal bold normal 18px Helvetica Neue;
+        }
     }
 `
 

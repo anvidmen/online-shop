@@ -1,4 +1,3 @@
-import React from 'react'
 import RemoveCart from 'screens/UserFlow/RemoveCart/RemoveCart'
 import CartItems from 'screens/UserFlow/CartItems/CartItems'
 import { Link } from 'react-router-dom'

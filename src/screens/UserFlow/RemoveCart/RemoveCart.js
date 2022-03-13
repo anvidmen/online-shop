@@ -1,7 +1,7 @@
-import React from 'react'
 import { StyledButton } from 'screens/UserFlow/MyCart/styles'
 
 const RemoveCart = ({ clearCart }) => {
+
   const handleRemoveCart = event => {
     event.preventDefault()
 
